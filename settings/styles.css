@@ -1,0 +1,106 @@
+body {
+  box-sizing: content-box;
+}
+
+#addon_wrapper {
+  display: grid;
+  grid-row-gap: 1em;
+}
+
+#items {
+  display: grid;
+  grid-row-gap: 1em;
+}
+
+.item-wrapper {
+  display: grid;
+  grid-template-columns: auto max-content;
+  padding: 1em;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.item-wrapper span {
+  font-size: 12pt;
+}
+
+button {
+  height: 32px;
+  border-radius: 2px;
+  width: auto;
+  font-size: 13px;
+  min-width: 132px;
+  padding: 0 8px;
+  color: #0c0c0d;
+  background: rgba(12, 12, 13, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgba(12, 12, 13, 0.2);
+}
+
+button:focus {
+  box-shadow: 0 0 0 1px #0a84ff inset, 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3)
+}
+
+button:active {
+  background: rgba(12, 12, 13, 0.3);
+}
+
+button.primary {
+  color: #fff;
+  background: #0060df;
+}
+
+button.primary:hover {
+  background: #003eaa;
+}
+
+button.primary:active {
+  background: #002275;
+  box-shadow: 0 0 0 1px #0a84ff inset, 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3)
+}
+
+input {
+  height: 32px;
+  width: auto;
+  border-radius: 2px;
+  padding: 0 8px;
+  border: 1px solid rgba(12, 12, 13, 0.2);
+  color: #0c0c0d;
+}
+
+input::placeholder {
+  color: #737373;
+  font-size: 0.833rem/1.4;
+}
+
+form.add_exeption {
+  grid-template-areas: "label label" "input button";
+  display: grid;
+  grid-template-columns: auto min-content;
+  grid-column-gap: 1em;
+  grid-row-gap: 8px;
+  padding: 1em;
+}
+
+form.add_exeption > label {
+  grid-area: label;
+  color: #0c0c0d;
+  font-size: 0.833rem/1.4;
+}
+
+form.add_exeption > input {
+  grid-area: input;
+}
+
+form.add_exeption:focus {
+  border-color: #0a84ff;
+  box-shadow: 0 0 0 1px #0a84ff, 0 0 0 4px rgba(10, 132, 255, 0.3);
+}
+
+form.add_exeption > button {
+  grid-area: button;
+}
+

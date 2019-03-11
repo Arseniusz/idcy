@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="addon_wrapper">
+      <div id="items"></div>
+      <form class="add_exeption browser-style">
+        <label for="exeption-name">
+          Enter url or RegExp
+        </label>
+        <input id="exeption-name"
+               class="browser-style"
+               name="exeption-name"
+               type="text"
+               placeholder="url or regexp"
+               value=""/>
+        <button id="add-exeption-button"
+                type="submit"
+                class="browser-style primary">
+          add
+        </button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
