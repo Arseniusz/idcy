@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "I didn't call you",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Block all unwanted requests from user defined urls",
 

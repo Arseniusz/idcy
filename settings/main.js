@@ -54,7 +54,7 @@ const addClass = className => element => {
 };
 // addText :: String -> HTMLElement -> HTMLElement
 const addText = text => element => {
-  element.text = text;
+  element.innerText = text;
   return element;
 };
 // addEvent :: String -> HTMLElement -> HTMLElement
